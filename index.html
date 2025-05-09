@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Template_01</title>
+      <link rel="stylesheet" href="style.css" />
+</head>
+
+<header class="navbar">
+      <div class="navbar-container">
+            <div class="logo" href="#home">Justice</div>
+          
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+          
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about" onclick="toggleAbout()">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">☀️</button>
+            </nav>
+      </div>
+</header>
+
+
+
+<body>
+      <hero class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                  <a href="#about" onclick="toggleAbout()">Justice</a>
+                  <p>Developer | Tester | Creator</p>
+                        
+            </div>
+            
+            <div class="aboutPanel" id="aboutPanel">
+                  <div class="aboutOverlay" id="aboutOverlay"></div>
+                  <button class="toggle-button" id="aboutToggle" onclick="toggleAbout()">▶</button>
+                  <div class="aboutContent">
+                        <div class="aboutText">
+                              <h2>About Me</h2>
+                              <p>
+                              Hi! I'm Justice, an off-the-wall nutjob that can create (or destroy) any challenge that is put in front of me <br>
+                              Robots are my passion, with little Companion bots to CSM's.
+                              Web-Designing is my hobby, from large indepth, personalized gaming experiences, to functional sites with little easter eggs. <br>
+                              Testing ... Well, that's where I like to have some FUN <br>
+                              Scroll on down to see my projects, play games, or send me a message to see what I can do for you!
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </hero>
+
+      
+
+      <section id="skills" class="section">
+            <h1>Current Technologies</h1>
+            <p>I'm a master of a range of modern technologies that empower me to build an array of smooth, highly functional solutions</p>
+            <div class="tech-grid">
+                  
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">Python</div>
+                              <div class="tech-description">AI Dev</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">JavaScript</div>
+                              <div class="tech-description">Back-end</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">HTML5</div>
+                              <div class="tech-description">Front-end</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">CSS</div>
+                              <div class="tech-description">Cascading Style Sheet</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">Rasperry Pi</div>
+                              <div class="tech-description">Tools</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">CNC Machining</div>
+                              <div class="tech-description">3D Printers | Industrial</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">AutoCAD</div>
+                              <div class="tech-description">Design</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">Git/Github</div>
+                              <div class="tech-description">Tools</div>
+                        </div>
+                  </div>
+
+                  <div class="tech-card">
+                        <img src="Images/Python.jpeg" class="tech-icon">
+                        <div class="tech-info">
+                              <div class="tech-name">Open-ai</div>
+                              <div class="tech-description">Backend Documentation</div>
+                        </div>
+                  </div>
+            </div>   
+
+      </section>
+
+            
+      
+
+      <section id="dropdown" class="section">
+            <h1>My Projects</h1>
+            <div class ="filter-group">
+                  <button data-group="AI" class="filter-btn">🤖 AI</button>
+                  <button data-group="Games" class="filter-btn">🎮 Games</button>
+                  <button data-group="WebDev" class="filter-btn">💻 WebDev</button>
+                  <button data-group="Workshop" class="filter-btn">🛠️ Workshop</button>
+                  <button data-group="Other" class="filter-btn">🌈 Other</button>
+            </div>      
+            <div class="dropdown">
+
+                  
+                  <div class="project-grid">
+
+                        <div class="project AIProject Games">
+                              <img class="projectImg" src="Images/Quests.jpg" alt="Project 1">
+                              <div class="description">
+                                    <h3>Quest Log</h3>
+                                    <p>Using AI to delegate tasks, and game mechanics to make it FUN</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date">2025</span>
+                                          <span class="skills" href="#skills">AI | Games</span>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="project AIProject Workshop">
+                              <img class="projectImg" src="Images/BD-1.jpeg" alt="Project 2">
+                              <div class="description">
+                                    <h3>BD-1</h3>
+                                    <p>Little robot companion. Boop beep bop</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date">2025</span>
+                                          <span class="skills" href="#skills">AI | Robotics</span>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="project AIProject Workshop">
+                              <img class="projectImg" src="Images/Smart Glasses.jpeg" alt="Project 3">
+                              <div class="description">
+                                    <h3>Smart Glasses</h3>
+                                    <p>Seeing more than with your eyes</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date"></span>
+                                          <span class="skills">AI | Computer Science</span>
+                                          
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="project AI">
+                              <img class="projectImg" src="Images/ParentalAdvisory.jpeg" alt="Project 4">
+                              <div class="description">
+                                    <h3>Riddle me This</h3>
+                                    <p>Teaching AI to speak in riddles. Success rate: Inconclusive. They refuse to tell me the answers.</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date"></span>
+                                          <span class="skills" href="#skills">AI | Python | Telegram</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project Workshop">
+                              <img class="projectImg" src="Images/Guitar.jpg" alt="Project 5">
+                              <div class="description">
+                                    <h3>Thunder Caster</h3>
+                                    <p>With searing tone, custom pickups, and a design built for ROCK, this guitar doesn’t just play—it SHREDS.</p>
+                                    <div class="projectMeta">
+                                          <span class="status success">Success</span>
+                                          <span class="date">2024</span>
+                                          <span class="skills" href="#skills">Woodworking | Music</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project Workshop">
+                              <img class="projectImg" src="Images/ElectricSkateboard.jpg" alt="Project 6">
+                              <div class="description">
+                                    <h3>Gravel Muncher</h3>
+                                    <p> Electric skateboard built for power and speed. Stability - not so much. That's why I keep on eating dirt.</p>
+                                    <div class="projectMeta">
+                                          <span class="status success">Success</span>
+                                          <span class="date"></span>
+                                          <span class="skills" href="#skills">Electric Motors | Active</span>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="project Games">
+                              <img class="projectImg" src="Images/GuitarHero.jpg" alt="Project 7">
+                              <div class="description">
+                                    <h3>Ultimate Guitar Hero</h3>
+                                    <p>Remade a classic Video Game to be 10x more realistic, and productive</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date">2025</span>
+                                          <span class="skills" href="#skills">Music | Games</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project AI">
+                              <img class="projectImg" src="Images/TalkingPlant.png" alt="Project 8">
+                              <div class="description">
+                                    <h3>Talking Plants</h3>
+                                    <p>Giving plants the ability to talk using micro-controller chips</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date"></span>
+                                          <span class="skills" href="#skills">Microcontrollers | Dirt</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project Other">
+                              <img class="projectImg" src="Images/McFly.jpg" alt="Project 9">
+                              <div class="description">
+                                    <h3>McFly</h3>
+                                    <p>Because 'Hoverboard' was already taken</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date"></span>
+                                          <span class="skills" href="#skills">Electric Motors | Active</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project WebDev">
+                              <img class="projectImg" src="Images/Cookie.jpeg" alt="Project 10">
+                              <div class="description">
+                                    <h3>Brooken Cookie</h3>
+                                    <p>Feeding the world half a cookie at a time</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date">2025</span>
+                                          <span class="skills" href="#skills">HTML | JavaScript</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project WebDev">
+                              <img class="projectImg" src="Images/Snail.jpg" alt="Project 11">
+                              <div class="description">
+                                    <h3>Snail</h3>
+                                    <p>Do not let loose under ANY CIRCUMSTANCES</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date">2025</span>
+                                          <span class="skills" href="#skills">JavaScript | Games</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="project WebDev">
+                              <img class="projectImg" src="Images/Cards.jpeg" alt="Project 12">
+                              <div class="description">
+                                    <h3>Card Games</h3>
+                                    <p>Know when to hold em, when to fold em, when to walk away, and when to take the money and run</p>
+                                    <div class="projectMeta">
+                                          <span class="status inProgress">In Progress</span>
+                                          <span class="date">2025</span>
+                                          <span class="skills" href="#skills">JavaScript | Games</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+      </section>
+
+      <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+              <div class="flex">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
+              </div>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank">GitHub</a>
+              <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+              <a href="mailto:you@example.com">Email</a>
+            </div>
+      </section>
+
+      
+      <footer>
+            <p>2025 Justice | Built by me, tested on sleep deprivation and gummy bears.
+            </p>
+      </footer>
+      <script src="script.js"></script>
+
+
+
+</body>
+</html>
